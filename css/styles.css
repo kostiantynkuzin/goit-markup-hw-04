@@ -244,6 +244,25 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  margin-bottom: 16px;
+}
+.team-soc-list {
+  display: flex;
+  justify-content: center;
+}
+.team-soc-item + .team-soc-item {
+  margin-left: 10px;
+}
+.team-soc-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.soc-icon {
+  fill: #2196f3;
 }
 /*-------------------------------------------------footer--------------------------------------------------- */
 .footer {
