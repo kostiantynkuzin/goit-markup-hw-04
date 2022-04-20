@@ -228,7 +228,7 @@ img {
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
-  background-color: #fff;
+  background-color: var(--primary-white-color);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
@@ -252,6 +252,10 @@ img {
   display: flex;
   justify-content: center;
 }
+.team-soc-item {
+  display: block;
+  align-items: center;
+}
 .team-soc-item + .team-soc-item {
   margin-left: 10px;
 }
@@ -264,10 +268,67 @@ img {
   align-items: center;
 }
 .team-soc-link:hover {
-  color: #2196f3;
+  background-color: var(--accent-color);
 }
-.soc-icon:hover {
-  color: #2196f3;
+.team-soc-link:focus {
+  background-color: var(--accent-color);
+}
+.team-soc-icon {
+  fill: #afb1b8;
+}
+.team-soc-link:hover .team-soc-icon {
+  fill: var(--primary-white-color);
+}
+.team-soc-link:focus .team-soc-icon {
+  fill: var(--primary-white-color);
+}
+/*-------------------------------------------------groups---------------------------------------------------*/
+.groups {
+  padding-top: var(--section-size);
+  padding-bottom: var(--section-size);
+  text-align: center;
+}
+.groups-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+  margin-bottom: 50px;
+}
+.groups-list {
+  display: flex;
+  justify-content: center;
+}
+.groups-item + .groups-item {
+  margin-left: 30px;
+}
+.groups-link {
+  width: 170px;
+  height: 92px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px Solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.groups-link:hover {
+  border-color: var(--accent-color);
+}
+.groups-link:focus {
+  border-color: var(--accent-color);
+}
+.groups-icon {
+  fill: #afb1b8;
+}
+.groups-link:hover .groups-icon {
+  fill: var(--accent-color);
+}
+.groups-link:focus .groups-icon {
+  border-color: var(--accent-color);
 }
 /*-------------------------------------------------footer--------------------------------------------------- */
 .footer {
