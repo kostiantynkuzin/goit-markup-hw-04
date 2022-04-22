@@ -118,7 +118,8 @@ img {
 }
 .header-mail,
 .header-tel {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   padding: 32px 0;
   font-weight: 500;
   font-size: 14px;
@@ -141,6 +142,7 @@ img {
     url(../images/bg-hero.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   max-width: 1600px;
   margin: 0 auto;
 }
@@ -243,6 +245,8 @@ img {
 }
 /* -----------------------------------------------team------------------------------------------------------ */
 .team {
+  max-width: 1600px;
+  margin: auto;
   background-color: #f5f4fa;
   padding-top: var(--section-size);
   padding-bottom: var(--section-size);
@@ -401,15 +405,12 @@ img {
 }
 .soc-network {
   display: inline-block;
-
-  margin-bottom: 100px;
   margin-left: 70px;
 }
 .soc-title {
-  font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 1.14;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
   color: var(--primary-white-color);
   margin-bottom: 20px;
 }
@@ -474,10 +475,6 @@ img {
 .button:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
-}
-.portfolio-card-item {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .portfolio-list-link {
   display: flex;
