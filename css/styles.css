@@ -373,6 +373,7 @@ img {
 }
 .footer-content {
   display: flex;
+  align-items: baseline;
 }
 .footer-list {
   display: inline-block;
@@ -413,6 +414,7 @@ img {
   letter-spacing: 0.03em;
   color: var(--primary-white-color);
   margin-bottom: 20px;
+  text-transform: uppercase;
 }
 .soc-net-list {
   display: flex;
